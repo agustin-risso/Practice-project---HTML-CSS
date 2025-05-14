@@ -15,16 +15,15 @@ body{
 }
 
 header{
-    width: 60vw;
-    height: 50px;
+    width: 100vw;
+    height: fit-content;
     display: flex;
-    justify-content: space-between;
+    background-color: #ddd;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     top: 0;
     z-index: 100;
-    padding: 10px 10px;
-    background-color: #f5f5f5;
 }
 
 header > nav{
@@ -124,11 +123,11 @@ main{
 }
 
 #contact{
-    height: 100vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 80px 0;
+    padding: 90px 0;
 }
 
 #contact > form{
@@ -182,4 +181,39 @@ main{
 
 #contact > form > button:active{
     transform: translateY(2px);
+}
+
+footer{
+    height: fit-content;
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    gap: 10rem;
+}
+
+footer > .socials{
+    display: flex;
+    align-items: center;
+}
+
+footer > .socials > a{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: 300ms;
+}
+
+footer > .socials > a:hover{
+    cursor: pointer;
+    background-color: #bbb;
 }
